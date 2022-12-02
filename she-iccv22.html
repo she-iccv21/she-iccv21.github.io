@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta property="og:image" content="SHE_logo.png">
+	<meta property="og:image:secure_url" content="SHE_logo.png">
+	
+    <title>SKETCHING FOR HUMAN EXPRESSIVITY</title>
+    <link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="bio.css">
+	<link rel="icon" href="SHE_logo_v3.svg">
+	<link rel="image_src" href="SHE_logo.png">
+    <style>
+        body {
+            font-family: "Calibri Light", sans-serif;
+			font-size: 13pt;
+        }
+        h1, h2, h3, h4, h5, h6  {
+            font-family: Georgia, serif;
+            letter-spacing: 1px;
+        }
+        span{
+            letter-spacing: 1px;
+        }
+		
+		h3.subsection{
+			color: #065093;
+			margin-top: 30px;
+		}
+		
+		button[name="speaker_btn"]
+		{
+			background: none;
+			border: none;
+			padding: 0;			
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		
+		p {
+			font-size: 12pt;
+		}
+</style>
+
+
+
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-padding-4 w3-padding-left w3-padding-right w3-card">
+        <img src="SHE_logo_v3.svg" alt="front" style="width:100px"/>
+        <a href="#Home" style="font-size:18px">
+            <button class="w3-bar-item w3-round-large w3-white w3-border-0">SHE ECCV'22</button></a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+			<a href="#Program" style="font-size:18px">
+				<button class="w3-bar-item w3-round-large w3-white w3-border-0">Program</button></a>
+			<a href="#Speakers" style="font-size:18px">
+				<button class="w3-bar-item w3-round-large w3-white w3-border-0">Invited Speakers</button></a>
+            <a href="#Organizers" style="font-size:18px">
+              <button class="w3-bar-item w3-round-large w3-white w3-border-0">Organizers</button></a>		
+            <a href="#Contact" style="font-size:18px">
+              <button class="w3-bar-item w3-round-large w3-white w3-border-0">Contact</button></a>
+        </div>
+      </div>
+    </div>
+    <br id="Home"/>
+    <br />
+    <div class="w3-container">
+        <div class="w3-content" style="max-width:1080px">
+            <div class="w3-content w3-center" style="max-width:1080px">
+                <h3 style="color:#165D9A">ECCV 2022, THE 2ND WORKSHOP ON</h3>
+                <h1 id="title" style="color:#165D9A">SKETCHING FOR HUMAN EXPRESSIVITY</h1>
+                <img src="SHE_logo_v3.svg" alt="front" style="width:200px"/>				
+                <h4>Sunday, October 23rd, 2022</h4>
+            </div>
+			
+			<div class="w3-content w3-center" style="max-width:1080px">
+			<h4 style="color:#d19f15"><a href="./she-iccv21.html">Previous events in this workshop series</a></h4>
+			</div>
+			
+            <br>
+            <div class="w3-content w3-justify w3-large w3-light-grey" style="max-width:1080px; color:#231F20">
+                <div class="w3-container w3-panel w3-border-top w3-border-bottom w3-border-grey">
+                <p>
+                    <span style="color:#065093; font-family:Georgia, serif">SKETCHES</span> are created by humans through an iterative process and reflect
+                    one’s sketching skills, taste, world perception and even character <span style="color:#065093; font-family:Georgia, serif" >IN JUST A SET OF SPARSE LINES</span>.
+                    Being the result of semantic, perceptual, or conceptual processing, sketches are distinctive from photos.
+                <br><br>
+                    While the Computer Vision and Machine Learning communities have firmly invested in reasoning with
+                    photos, sketch data just recently got into the spotlight. This shift of focus on using sketch data has
+                    already started to cause a profound impact on many facets of research on computer vision, computer graphics,
+                    machine learning, HCI and artificial intelligence at large. Sketch has not only been used for image
+                    <span style="color:#065093; font-family:Georgia, serif">RETRIEVAL, 3D MODELING, USER INTERFACE DESIGN</span>, but also as a key enabler
+                    in our fundamental understanding of <span style="color:#065093; font-family:Georgia, serif">VISUAL ABSTRACTION</span>,
+                    <span style="color:#065093; font-family:Georgia, serif">CREATIVITY</span>, and <span style="color:#065093; font-family:Georgia, serif">EXPRESSIVITY</span>.
+                    Developing such understanding is impossible with photos.
+                <br><br>
+                    This (series of) workshop aims to <span style="color:#065093; font-family:Georgia, serif">BRING TOGETHER RESEARCHERS FROM INTERDISCIPLINARY RESEARCH FIELDS</span>
+                    in the community to consolidate cross-discipline insights, <span style="color:#065093; font-family:Georgia, serif">IDENTIFY AND ENCOURAGE NEW RESEARCH DIRECTIONS</span>,
+                    and ultimately foster the growth of the sketch research community.
+                </p>
+                </div>
+            </div>
+			
+			   <br id="Speakers">
+            <div class="w3-content w3-center " style="max-width:1080px">
+                <h2 class = "w3-light-grey w3-border-bottom w3-border-grey" style="color:#3B3F41">INVITED SPEAKERS</h2>
+				<!-- <div> -->
+					<!-- Coming soon. -->
+				<!-- </div> -->
+				
+                <div class="w3-content w3-center" style="color:#231F20">
+					<div style="max-width:850px; display:inline-block">
+                        <a style="color:#795548" href="javascript:onclick=showBioSpeaker('bio_bousseau')"><img src="eccv_speakers/Bousseau.png" alt="front" style="width:180px"/></a>
+                        <div style="margin:10px 0"></div>
+						<h4><button onclick="showBioSpeaker(this.value)" type="button" name="speaker_btn" value="bio_bousseau" style="color:#795548">Dr. Adrien Bousseau</button></h4>
+                    </div>
+					&emsp;&emsp;&emsp;&emsp;
+					<div style="max-width:850px; display:inline-block">
+                        <a style="color:#795548" href="javascript:onclick=showBioSpeaker('bio_deng')"><img src="eccv_speakers/Deng.png" alt="front" style="width:180px"/></a>
+                        <div style="margin:10px 0"></div>                        
+						<h4><button onclick="showBioSpeaker(this.value)" type="button" name="speaker_btn" value="bio_deng" style="color:#795548">Prof. Cheng Deng</button></h4>
+                    </div>
+                    &emsp;&emsp;&emsp;&emsp;
+					
+					<div style="max-width:850px; display:inline-block">
+                        <a style="color:#795548" href="javascript:onclick=showBioSpeaker('bio_sezgin')"><img src="eccv_speakers/Sezgin.png" alt="front" style="width:180px"/></a>
+                        <div style="margin:10px 0"></div>                  
+						<h4><button onclick="showBioSpeaker(this.value)" type="button" name="speaker_btn" value="bio_sezgin" style="color:#795548">Dr. Metin Sezgin</button></h4>
+
+                    </div>
+					
+                    &emsp;&emsp;&emsp;&emsp;
+					<div style="max-width:850px; display:inline-block">
+                        <a style="color:#795548" href="javascript:onclick=showBioSpeaker('bio_shugrina')"><img src="eccv_speakers/Shugrina.png" alt="front" style="width:180px"/></a>
+                        <div style="margin:10px 0"></div>                        
+						<h4><button onclick="showBioSpeaker(this.value)" type="button" name="speaker_btn" value="bio_shugrina" style="color:#795548">Dr. Maria Shugrina</button></h4>
+                    </div>
+					&emsp;&emsp;&emsp;&emsp;
+					<div style="max-width:850px; display:inline-block">
+                        <a style="color:#795548" href="javascript:onclick=showBioSpeaker('bio_simo')"><img src="eccv_speakers/Simo-Serra.png" alt="front" style="width:180px"/></a>
+                        <div style="margin:10px 0"></div>                        
+						<h4><button onclick="showBioSpeaker(this.value)" type="button" name="speaker_btn" value="bio_simo" style="color:#795548">Dr. Edgar Simo-Serra</button></h4>
+                    </div>
+                  
+                    &emsp;&emsp;&emsp;&emsp;
+					
+                    <div style="max-width:850px; display:inline-block">
+                        <a style="color:#795548" href="javascript:onclick=showBioSpeaker('bio_song')"><img src="eccv_speakers/Song.png" alt="front" style="width:180px"/></a>
+                        <div style="margin:10px 0"></div>                        
+						<h4><button onclick="showBioSpeaker(this.value)" type="button" name="speaker_btn" value="bio_song" style="color:#795548">Prof. Yi-Zhe Song</button></h4>
+                    </div>
+                </div>
+				
+				<div class="bio" id="bio_sezgin">
+					<p> 
+						<a style="color:#795548" href="https://iui.ku.edu.tr/people/">Dr. Metin Sezgin</a>
+						graduated summa cum laude with Honors from Syracuse University in 1999. He completed his MS in the Artificial Intelligence Laboratory at Massachusetts Institute of Technology in 2001. He received his PhD in 2006 from Massachusetts Institute of Technology. He subsequently joined the Department of Computer Science at the University of Cambridge as a Postdoctoral Research Associate. Dr. Sezgin is currently an Associate Professor in the College of Engineering at Koç University, Istanbul. His research interests include intelligent human-computer interfaces, multimodal sensor fusion, and HCI applications of machine learning. Dr. Sezgin is particularly interested in applications of these technologies in building speech- and pen-based intelligent interfaces. Dr. Sezgin held visiting posts at Harvard University and Yale University. He is an associate editor of the IEEE Transactions on Affective Computing, and the Computers & Graphics journal. His research has been supported by international and national grants including grants from the European Research Council, and Turk Telekom. He is a recipient of the Career Award of the Scientific and Technological Research Council of Turkey. As a consultant, Dr. Sezgin led technical teams in a diverse range of industries, including automotive, banking, defense, telecom, and retail.
+					</p>
+				</div>
+				
+				<div class="bio" id="bio_bousseau">
+					<p> 
+						<a style="color:#795548" href="http://www-sop.inria.fr/members/Adrien.Bousseau/">Dr. Adrien Bousseau</a> is a researcher at Inria Sophia-Antipolis in the GraphDeco research group. He did his Ph.D. at Inria Rhône-Alpes and his postdoc at UC Berkeley. He also did several internships at Adobe Research. Adrien does research on image creation and manipulation, with a focus on drawings and photographs. Most notably he worked on image stylization, image editing and relighting, vector graphics, and sketch-based modeling. He received one of the three Eurographics 2011 Ph.D. award for his research on expressive image manipulations, and a young researcher award from the French National Research Agency (ANR) for his work on computer-assisted drawing. He received an ERC Starting Grant to work on drawing interpretation for 3D design.l Research Agency (ANR) for his work on computer-assisted drawing. Adrien received an ERC Starting Grant in 2016 to work on drawing interpretation for 3D design. 
+
+					</p>
+				</div>
+				
+				<div class="bio" id="bio_shugrina">
+					<p> 
+						<a style="color:#795548" href="http://shumash.com/">Dr. Masha Shugrina</a> is a Senior Research Scientist at the NVIDIA Toronto AI Lab, where she manages a group focused on creative applications of AI and efforts to accelerate research. Her key research interest is enabling AI to work in the interactive loop, enhancing rather than replacing creativity. She has pursued her passion for creativity-enhancing applications and robust software engineering in many other settings. She defended her PhD at the University of Toronto, where she investigated the design playful and intelligent creative tools, receiving Canada's Alain Fournier Award for Outstanding Doctoral Dissertation in Computer Graphics and founding colorsandbox.com. Prior to this, she was a Research Engineer at Adobe Research (Cambridge, MA), where she led the Playful Palette project. Before Adobe, Masha got her Master’s from MIT, where she worked on customizable models for 3D printing. Before returning to graphics research, Masha had an established engineering career as a Senior Software Engineer / Tech Lead at Google (NYC and Zurich). She is also an avid oil painter, whenever she can find the time.
+					</p>
+				</div>
+				
+				<div class="bio" id="bio_simo">
+					<p> 
+						<a style="color:#795548" href="https://esslab.jp/~ess/en/">Dr. Edgar Simo-Serra</a>
+						is currently an associate professor at Waseda 
+						University. He obtained his Industrial Engineering degree from 
+						BarcelonaTech in 2011 and his Ph.D. in 2015 from the same university. 
+						 From 2015 to 2018 he was at Waseda University as a junior researcher 
+						(assistant professor), and during 2018 he was a JST Presto Researcher 
+						before rejoining Waseda. 
+					</p>
+					<p>
+						His general research interests are in the 
+						intersection of computer vision, computer graphics, and machine learning 
+						with applications to large-scale real world problems.
+
+					</p>
+				</div>
+				
+				<div class="bio" id="bio_deng">
+					<p> 
+						<a style="color:#795548" href="https://scholar.google.co.uk/citations?user=OROjmc8AAAAJ&hl=en&oi=ao">Prof. Cheng Deng</a>
+						received the B.Sc., M.Sc., and Ph.D. degrees in signal and information processing from Xidian University, Xi’an, China. He is currently a Full Professor with the School of Electronic Engineering at Xidian University.
+					<p>
+					</p>
+						His research interests include multimodal machine learning, computer vision, and deep learning. He is the author and coauthor of more than 130 scientific articles at top venues, including IEEE T-PAMI, T-NNLS, T-CYB, T-MM, T-SMC, T-IP, ICML, NeurIPS, ICCV, CVPR, IJCAI, and AAAI. He has served as a reviewer or a program committee member to more than 10 leading computer science conferences including ICML, NeurIPS, CVPR, ICCV, KDD, and more than 30 leading international journals including IJCV, IEEE T-PAMI, T-CYB, T-NNLS, T-IP, T-CSVT, T-MM, T-GRS, T-IFS, T-KDD, Information Sciences, Information Fusion, Pattern Recognition, Signal Processing, etc. He is currently serving on the editorial boards of Pattern Recognition, Neurocomputing, and Pattern Recognition Letters, and served ICCV2021 and CVPR2021 as an Area Chair.
+
+					</p>
+				</div>
+				
+				<div class="bio" id="bio_song">
+					<p> 
+						<a style="color:#795548" href="https://scholar.google.co.uk/citations?user=irZFP_AAAAAJ&hl=en">Prof. Yi-Zhe Song</a> is a Professor of Computer Vision and Machine Learning,
+						and Director of SketchX Lab at the Centre for Vision Speech and Signal
+						Processing (CVSSP), University of Surrey. He obtained a PhD in 2008 on
+						Computer Vision and Machine Learning from the University of Bath, a
+						MSc (with Best Dissertation Award) in 2004 from the University of
+						Cambridge, and a Bachelor's degree (First Class Honours) in 2003 from
+						the University of Bath. He is an Associate Editor of the IEEE
+						Transactions on Pattern Analysis and Machine Intelligence (TPAMI), and
+						Frontiers in Computer Science – Computer Vision. He served as a
+						Program Chair for the British Machine Vision Conference (BMVC) 2021,
+						and regularly serves as Area Chair (AC) for flagship computer vision
+						and machine learning conferences, most recently at ECCV’22 and
+						CVPR'22. He is a Senior Member of IEEE, a Fellow of the Higher
+						Education Academy, as well as full member of the EPSRC review college.
+
+					</p>
+				</div>
+				
+			</div>
+				
+
+			<br id="Program">
+            <div class="w3-content w3-center" style="max-width:1080px">
+                <h2 style="color:#3B3F41">PROGRAM</h2>
+                <p>
+					Keynote session: 30 minutes talk + 10 minutes Q&A.
+				</p>
+				<p>
+					Paper session: 10 minutes talk + 5 minutes Q&A.
+				</p>
+				
+				
+				<table class="w3-center w3-border-top  w3-border-grey w3-border-bottom  w3-border-grey" cellpadding="2" cellspacing="0" style=" margin-left: auto;
+  margin-right: auto;">					
+					<tr class="w3-border-bottom  w3-border-grey">
+					<td ><b>Time (Tel-Aviv: GMT+3)</b></td><td><b>Session</b></td></td>
+											<td><b>Speaker</b></td><td><b>Chair</b></td>
+					</tr>
+					<tr class="general w3-border-bottom  w3-border-white">
+						<td>2:00 PM - 2:05 PM</td>
+						<td style="vertical-align: middle;">Welcome / Opening Remarks</td>											
+						<td></td>											
+						<td>Qian Yu</td>
+					</tr>
+					<tr class="keynote  w3-border-bottom  w3-border-white">
+						<td>2:05 PM - 2:45 PM</td>
+							<td>Keynote talk:  <br> 
+							<span class="talk_ttl">	"Sketching, Illustration, and Machine Learning" </span>
+							<br> 
+							Abstract:
+							<br> 						
+							<br> 
+							<div class="abstract"> 
+							Since the dawn of civilization, humans have always been drawing to convey emotions, represent abstract concepts, commemorate events, or transmit knowledge. From cave paintings, to modern digital painting software, technology has always assisted in the illustration process. In this talk, I shall introduce and focus on recent machine learning techniques for aiding line drawing and digital illustration. I will cover a myriad of existing research to deal with the particularities of line drawings, and also present open problems and outstanding issues in the field.
+							</div>
+						</td>	
+						<td class="speaker">Edgar Simo-Serra</td>
+						<td>Richard Zhang</td>
+					</tr>
+					<tr class="keynote  w3-border-bottom  w3-border-white">
+						<td>2:45 PM - 3:25 PM  </td>
+						<td>
+							Keynote talk:<br> 
+							<span class="talk_ttl">	"From sketch, to CAD, to sketch" </span>
+							<br> 
+							Abstract:
+							<br> 
+							<div class="abstract"> 
+							Computer Aided Design (CAD) is a multi-billion dollar industry responsible for the digital creation of almost all manufactured goods. Central to CAD productivity is the concept of parametric 3D modeling, which allows relevant dimensions of a shape to be changed after its conception. However, the gain of productivity promised by parametric models is strongly diminished by the extreme difficulty of creating such models in the first place. To promote effective modeling strategies, design educators and practitioners advocate freehand sketching as a preliminary step to parametric modeling. Our key insight is to consider freehand sketching as the natural language of designers, which needs to be translated into the formal language of parametric computer-aided design. In this talk, I will present a series of projects that aims at automating the translation of freehand sketches into parametric CAD models, and vice-versa.
+							</div>
+						</td>													
+						
+						<td class="speaker">Adrien Bousseau</td>
+						<td>Mikhail Bessmeltsev</td>
+					</tr>
+					<tr class="keynote  w3-border-bottom  w3-border-white">
+						<td>3:25 PM - 4:05 PM  </td>
+						<td>Keynote talk:<br> 
+							<span class="talk_ttl">	"Cross-domain Sketch-based Modeling: Retrieval and Visual Generation" </span>
+							<br> 
+							Abstract:
+							<br> 
+							<div class="abstract"> 
+							Hand-drawn sketches can express users' ideas intuitively and flexibly, and are easy to interact with mobile devices, which have attracted extensive attention in the fields of image retrieval and visual content generation. Currently, most methods employ generative adversarial networks to design models across two domains of sketch and natural image for these downstream tasks. This talk first summarizes the existing popular methods and their shortcomings, and introduces the research progress in sketch-based retrieval and visual content generation from two cross-domain perspectives, i.e., data and semantic, and finally discusses the future research in this field.
+							</div>
+						</td>													
+						<td class="speaker">Cheng Deng</td>
+						<td>Yonggang Qi</td>
+					</tr>					
+						<tr class="keynote  w3-border-bottom  w3-border-white">
+						<td>4:05 PM - 4:45 PM  </td>
+						
+						<td>
+							Keynote talk:
+							<br> 
+							<span class="talk_ttl">	"A Critical Review of Sketch Collection Methods: Remembering How Humans Really Sketch" </span>
+							<br> 
+							Abstract:
+							<br> 
+							<div class="abstract"> 
+							Sketching is a natural and effortless mode of expression that doesn't require specialized knowledge. As a powerful tool for processing and communicating ideas, sketching promises immense opportunities in the field of Human-Computer Interaction (HCI). That's why the community has long been devoted to building sketch recognition systems to introduce this modality into our relationship with technology. However, with the increased need for data to train intelligent systems, sketch collection practices have inclined towards standardized methods that take no account of natural sketching behaviors. Today, researchers are blinded by an abundance of sketch data that misrepresent real sketches, and consequently build models that are ineffective in real-life applications. We would like to raise awareness of the community's deviation from ideal utilization of sketches by emphasizing the discrepancy between natural sketches and those presented in the literature. In our work, we enumerate features associated with sketching observed in daily life, present a critical review of popular sketch datasets, and promote good practices to encourage community in building realistic sketch collection settings that will yield natural sketch data.
+							</div>
+						</td>								
+						
+						<td class="speaker">Metin Sezgin</td>
+						<td>Giorgos Tolias</td>
+					</tr>
+			
+					<tr class="presentation  w3-border-bottom  w3-border-white">
+						<td> 4:45 PM - 5:00 PM  </td>
+						<td> 	
+							Invited paper: <br> 	
+							<span class="talk_ttl"> 
+								Sketch2Pose: estimating a 3D character pose from a bitmap sketch
+							</span> 
+							<br>
+							Brodt, K. and Bessmeltsev, M., ACM TOG'22
+						</td>														
+						<td class="speaker">Kirill Brodt</td>						
+						<td>Xiaoguang Han</td>
+					</tr>
+					<tr class="presentation  w3-border-bottom  w3-border-white">
+						<td> 5:00 PM - 5:15 PM  </td>
+						<td> 
+							Invited paper: 	<br> 
+							<span class="talk_ttl"> 
+								Learning to generate line drawings that convey geometry and semantics
+							</span> 
+							<br>
+							Chan, C., Durand, F. and Isola, P, CVPR'22
+						</td>														
+						<td class="speaker">Caroline Chan</td>						
+						<td>Qian Yu</td>
+					</tr>
+					<tr class="keynote  w3-border-bottom  w3-border-white">
+						<td>5:15 PM - 5:55 PM  </td>
+						<td>
+							Keynote talk:<br> 
+							<span class="talk_ttl">	"Vision != Photo" </span>
+							<br> 
+							Abstract:
+							<br> 
+							<div class="abstract"> 
+								While the vision community is accustomed to reasoning with photos, one
+								does need to be reminded that photos are mere raw pixels with no
+								semantics. Recent research has recognised this very fact and started
+								to delve into human sketches instead -- a form of visual data that had
+								been inherently subjected to human semantic interpretation. This shift
+								has already started to cause profound impact on many facets of
+								research on computer vision, computer graphics, machine learning, and
+								artificial intelligence at large. Sketch has not only been used as
+								novel means for applications such as cross-modal image retrieval, 3D
+								modelling, forensics, but also as key enablers for the fundamental
+								understanding of visual abstraction and creativity which were
+								otherwise infeasible with photos. This talk will summarise some of
+								these trends, mainly using examples from research performed at
+								SketchX. We will start with conventional sketch topics such as
+								recognition, synthesis, to the more recent exciting developments on
+								abstraction modelling and human creativity. We will then talk about
+								how sketch research has redefined some of the more conventional vision
+								topics such as (i) fine-grained visual analysis, (ii) 3D vision
+								(AR/VR), and (iii) OCR. We will finish by highlighting a few open
+								research challenges to drive future sketch research.
+							</div>
+						</td>
+						<td class="speaker">Yi-Zhe Song</td>
+						<td>Stella Yu</td>
+					</tr>
+					<tr class="keynote  w3-border-bottom  w3-border-white">
+						<td>5:55 PM - 6:35 PM  </td>
+						<td>
+							Keynote talk:  <br> 
+							<span class="talk_ttl">	"Designing Creative Tools In the Age of AI" </span>
+							<br> 
+							Abstract:
+							<br> 
+							<div class="abstract"> 
+							Last year has seen staggering progress in AI-driven generation of visual content. But how do we leverage AI to design tools that truly support creativity, beyond loosely controlled exploration? In this talk, I will go over core considerations when designing for the creative process, including control, input modalities, exploration and serendipity. I will include several case studies from research projects from the Creative and Applied AI Tools (CAAT) group at NVIDIA Toronto AI Lab, where we focus on researching, developing and launching AI technology as real tools creators can use. Research covered will include generative 3D models and generative modeling of interactive drawing tools. More than anything this talk is intended to give food for thought for designing creative tools in the modern technology landscape. 
+							</div>
+						</td>	
+						<td class="speaker">Maria Shugrina</td>
+						<td>Yulia Gryaditskaya</td>
+					</tr>
+					<tr class="general ">
+						<td>6:35 PM - 6:40 PM</td>
+						<td> Closing remarks</td>
+						<td></td>
+						<td>Yulia Gryaditskaya</td>
+					</tr>
+				</table>
+            </div>
+				
+            
+			
+<!-- 			<br id="Program"> 
+            <div class="w3-content w3-center" style="max-width:1080px"> 
+            <h2 style="color:#3B3F41">PROGRAM</h2> 
+            <p>
+					Keynote session: 30 minutes talk + 10 minutes Q&A.
+				</p>
+				<p>
+					Paper session: 12 minutes talk + 8 minutes Q&A. -->
+				<!-- </p> -->
+				
+				<!-- <table class="w3-center w3-border-top  w3-border-grey w3-border-bottom  w3-border-grey" cellpadding="2" cellspacing="0" style="table-layout: fixed; width: auto;">					 -->
+					<!-- <tr class="w3-border-bottom  w3-border-grey"> -->
+					<!-- <td ><b>Time (EDT Montreal)</b></td><td><b>Session</b></td></td> -->
+											<!-- <td><b>Speaker</b><td><b>Video</b></td><td><b>Chair</b></td> -->
+					<!-- </tr> -->
+					<!-- <tr class="general"> -->
+					<!-- <td> 1:00 PM - 1:05 PM </td><td style="vertical-align: middle;">  -->
+											<!-- <a href = "https://youtu.be/x7VscfPVLy0" >Welcome / Opening Remarks</a> </td>											 -->
+											<!-- <td>Yulia Gryaditskaya</td> -->
+											<!-- <td>  <a href = "https://youtu.be/x7VscfPVLy0" ><img  src="video_logos/intro_logo.PNG" style="width:120px"/></a>  </td> -->
+											<!-- <td>Yulia Gryaditskaya</td> -->
+					<!-- </tr> -->
+					<!-- <tr class="keynote"> -->
+					<!-- <td> 1:05 PM - 1:45 PM  </td><td>Keynote:  <br>  -->
+													<!-- <span class="talk_ttl"> -->
+													<!-- <a href = "https://youtu.be/GSfmB4m03Ic"> -->
+													<!-- "Data-driven Sketch Interpretation" -->
+													<!-- </a> -->
+													<!-- </span></td>													 -->
+													<!-- <td>Hongbo Fu</td> -->
+													<!-- <td>  <a href = "https://youtu.be/GSfmB4m03Ic"><img  src="video_logos/hongbo_fu.PNG" style="width:120px"/></a>  </td> -->
+													<!-- <td>Qian Yu</td> -->
+					<!-- </tr> -->
+					<!-- <tr class="presentation"> -->
+					<!-- <td> 1:45 PM - 2:05 PM  </td><td> 	 -->
+												<!-- <span class="talk_ttl"> -->
+												<!-- <a href = "https://youtu.be/7VGa6kQbIGI"> -->
+												<!-- "SketchBird: Learning to Generate Bird Sketches from Text" -->
+												<!-- </a> -->
+												<!-- </span> <br> -->
+												<!-- Shaozu Yuan, Aijun Dai, Zhiling Yan, Zehua Guo, Ruixue Liu, Meng Chen -->
+														<!-- </td>														 -->
+														<!-- <td>Meng Chen</td> -->
+														<!-- <td>  <a href = "https://youtu.be/7VGa6kQbIGI"><img  src="video_logos/meng_chen.PNG" style="width:120px"/></a>  </td> -->
+														<!-- <td>Yulia Gryaditskaya</td> -->
+					<!-- </tr> -->
+					<!-- <tr style="break"> -->
+					<!-- <td> 2:05 PM - 2:15 PM </td><td>Break</td><td></td><td></td><td></td> -->
+					<!-- </tr> -->
+					
+				
+					<!-- <tr class="keynote"> -->
+					<!-- <td> 2:15 PM - 2:55 PM  </td><td> -->
+											<!-- Keynote:  <br> -->
+											<!-- <span class="talk_ttl"><a href = "https://youtu.be/sklrma28Y4A">"Parsing and Processing Artist-Drawn Imagery"</a></span> -->
+											<!-- </td> -->
+											<!-- <td>Alla Sheffer</td> -->
+											<!-- <td>  <a href = "https://youtu.be/sklrma28Y4A" ><img  src="video_logos/alla_sheffer.PNG" style="width:120px"/></a>  </td>											 -->
+											<!-- <td>Adrien Bousseau</td> -->
+					<!-- </tr> -->
+					<!-- <tr class="presentation"> -->
+					<!-- <td> 2:55 PM - 3:15 PM  </td><td> -->
+												<!-- <span class="talk_ttl"><a href = "https://youtu.be/BVHkVvsRYfA">"SketchyDepth: from Scene Sketches to RGB-D Images"</a></span>	<br>											 -->
+												<!-- Gianluca Berardi, Samuele Salti, Luigi Di Stefano  -->
+											<!-- </td><td>Gianluca Berardi</td> -->
+											<!-- <td>  <a href = "https://youtu.be/BVHkVvsRYfA"><img  src="video_logos/Gianluca_Berardi.PNG" style="width:120px"/></a>  </td>																						 -->
+											<!-- <td>Qian Yu</td> -->
+					<!-- </tr> -->
+					<!-- <tr style="break"> -->
+					<!-- <td> 3:15 PM - 3:25 PM </td><td>Break</td><td></td><td></td><td> </td> -->
+					<!-- </tr> -->
+					
+					<!-- <tr class="keynote"> -->
+					<!-- <td> 3:25 PM - 4:05 PM  </td><td>Keynote:<br> -->
+											<!-- <span class="talk_ttl"> <a href = "https://youtu.be/s21tYPloQ30" >"Why Do Line Drawings Work?"</a><i/> -->
+											<!-- </td><td>Aaron Hertzmann</td> -->
+											<!-- <td>  <a href = "https://youtu.be/s21tYPloQ30" ><img  src="video_logos/Aaron_Hertzmann.PNG" style="width:120px"/></a>  </td>																						 -->
+											<!-- <td>Niloy Mitra</td> -->
+					<!-- </tr> -->
+					<!-- <tr class="presentation"> -->
+					<!-- <td> 4:05 PM - 4:25 PM  </td><td>  -->
+												<!-- <span class="talk_ttl">  -->
+												<!-- <a href = "https://youtu.be/5gs5mK0ipZc" > -->
+												<!-- "Scene Designer: a Unified Model for Scene Search and Synthesis from Sketch"</a></span> <br>											 -->
+												<!-- Leo Sampaio Ferraz Ribeiro,  -->
+												<!-- Tu Bui,  -->
+												<!-- John Collomosse, -->
+												<!-- Moacir Ponti  -->
+											<!-- </td><td>Leo Sampaio Ferraz Ribeiro</td> -->
+											<!-- <td>  <a href = "https://youtu.be/5gs5mK0ipZc" ><img  src="video_logos/Leo_Ribeiro.PNG" style="width:120px"/></a>  </td>																						 -->
+											<!-- <td>Yonggang Qi</td> -->
+					<!-- </tr> -->
+					<!-- <tr style="break"> -->
+					<!-- <td> 4:25 PM - 4:35 PM </td><td>Break</td><td> </td><td> </td><td> </td> -->
+					<!-- </tr> -->
+					
+			
+					<!-- <tr class="keynote"> -->
+					<!-- <td> 4:35 PM - 5:15 PM </td><td> Keynote: <br> -->
+													<!-- <span class="talk_ttl"><a href = "https://youtu.be/0O-V282W8V4" >"Collaborative Sketching"</a></span> -->
+											<!-- </td><td>Devi Parikh</td> -->
+											<!-- <td>  <a href = "https://youtu.be/0O-V282W8V4" ><img  src="video_logos/Devi_Parikh.PNG" style="width:120px"/></a>  </td>	 -->
+											<!-- <td>Sven Dickinson</td> -->
+					<!-- </tr> -->
+					<!-- <tr class="presentation"> -->
+					<!-- <td> 5:15 PM - 5:35 PM  </td><td> -->
+											<!-- <span class="talk_ttl">"Supporting Reference Imagery for Digital Drawing"</span> <br> -->
+											<!-- <b>Best paper award!</b> -->
+											<!-- <br> -->
+											<!-- Josh Holinaty, Alec Jacobson, Fanny Chevalier -->
+											<!-- </td><td>Josh Holinaty</td> -->
+											<!-- <td>  <a href = "" ><img  src="video_logos/Josh_Holinaty-01.PNG" style="width:120px"/></a>  </td>	 -->
+											<!-- <td>Yulia Gryaditskaya</td> -->
+					<!-- </tr> -->
+					<!-- <tr class="general"> -->
+					<!-- <td> 5:35 PM - 6:00 PM  </td><td> Panel discussion / Best paper award </td><td></td><td></td><td>Yulia Gryaditskaya</td> -->
+					<!-- </tr> -->
+					
+				
+				<!-- </table> -->
+            <!-- </div> -->
+			
+			
+         
+
+            </div>
+            <br id="Organizers">
+            <div class="w3-content w3-center " style="max-width:1180px">
+                <h2 class = "w3-light-grey w3-border-bottom w3-border-grey" style="color:#3B3F41">ORGANIZERS</h2>
+				<!-- <div> -->
+					<!-- Coming soon. -->
+				<!-- </div> -->
+                <div class="w3-content w3-center" style="color:#231F20">
+                    
+					<div style="max-width:850px; display:inline-block">
+                        <a href="javascript:onclick=showBioOrganizer('bio_qian')"><img src="image/Organizer_2.png" alt="front" style="width:180px"/></a>
+                        <div style="margin:10px 0"></div>
+                    
+						<h4><button onclick="showBioOrganizer(this.value)" type="button" name="speaker_btn" value="bio_qian" style="color:#795548">Dr. Qian Yu*</button></h4>						
+                    </div>
+					&emsp;&emsp;&emsp;&emsp;
+					<div style="max-width:850px; display:inline-block">
+                        <a href="javascript:onclick=showBioOrganizer('bio_bessmeltsev')"><img src="eccv_organizers/Bessmeltsev.png" alt="front" style="width:180px"/></a>
+                        <div style="margin:10px 0"></div>
+                    
+						<h4><button onclick="showBioOrganizer(this.value)" type="button" name="speaker_btn" value="bio_bessmeltsev" style="color:#795548">Dr. Mikhail Bessmeltsev</button></h4>						
+                    </div>
+                    
+                    &emsp;&emsp;&emsp;&emsp;
+                    <div style="max-width:850px; display:inline-block">
+                        <a href="javascript:onclick=showBioOrganizer('bio_yulia')"><img src="eccv_organizers/Gryaditskaya.png" alt="front" style="width:180px"/></a>
+                        <div style="margin:10px 0"></div>
+						<h4><button onclick="showBioOrganizer(this.value)" type="button" name="speaker_btn" value="bio_yulia" style="color:#795548">Dr. Yulia Gryaditskaya</button></h4>						
+                    </div>
+					&emsp;&emsp;&emsp;&emsp;
+                    
+                    <div style="max-width:850px; display:inline-block">
+                        <a href="javascript:onclick=showBioOrganizer('bio_han')"><img src="eccv_organizers/Han.png" alt="front" style="width:180px "  /></a>
+                        <div style="margin:10px 0"></div>
+                      
+						<h4><button onclick="showBioOrganizer(this.value)" type="button" name="speaker_btn" value="bio_han" style="color:#795548">Dr. Xiaoguang Han</button></h4>						
+                    </div>
+                    &emsp;&emsp;&emsp;&emsp;
+                    <div style="max-width:850px; display:inline-block">
+                        <a href="javascript:onclick=showBioOrganizer('bio_yonggang')"><img src="image/Organizer_3.png" alt="front" style="width:180px"/></a>
+                        <div style="margin:10px 0"></div>
+                    
+						<h4><button onclick="showBioOrganizer(this.value)" type="button" name="speaker_btn" value="bio_yonggang" style="color:#795548">Dr. Yonggang Qi</button></h4>						
+                    </div>
+						&emsp;&emsp;&emsp;&emsp;
+                <!-- <div class="w3-content w3-center" style="max-width:850px; color:#231F20"> -->
+                    <div style="max-width:850px; display:inline-block">
+                        <a href="javascript:onclick=showBioOrganizer('bio_tolias')"><img src="eccv_organizers/Tolias.png" alt="front" style="width:180px"/></a>
+                        <div style="margin:10px 0"></div>
+                    
+						<h4><button onclick="showBioOrganizer(this.value)" type="button" name="speaker_btn" value="bio_tolias" style="color:#795548">Dr. Giorgos Tolias</button></h4>						
+                    </div>
+                    &emsp;&emsp;&emsp;&emsp;
+                    <div style="max-width:850px; display:inline-block">
+                        <a href="javascript:onclick=showBioOrganizer('bio_yu')"><img src="eccv_organizers/YuS.png" alt="front" style="width:180px"/></a>
+                        <div style="margin:10px 0"></div>
+                    
+						<h4><button onclick="showBioOrganizer(this.value)" type="button" name="speaker_btn" value="bio_yu" style="color:#795548">Dr. Stella Yu</button></h4>						
+                    </div>
+					&emsp;&emsp;&emsp;&emsp;
+                    <div style="max-width:850px; display:inline-block">
+                        <a href="javascript:onclick=showBioOrganizer('bio_r_zhang')"><img src="eccv_organizers/Richard_Zhang.png" alt="front" style="width:180px"/></a>
+                        <div style="margin:10px 0"></div>
+                    
+						<h4><button onclick="showBioOrganizer(this.value)" type="button" name="speaker_btn" value="bio_r_zhang" style="color:#795548">Dr. Richard Zhang</button></h4>						
+                    </div>
+                <!-- </div> -->
+				
+                    
+                </div>
+				
+				<div class="bio" id="bio_yulia">
+					<p> 
+						<a href="https://yulia.gryaditskaya.com/">Dr. Yulia Gryaditskaya</a> is an Assistant Professor (Lecturer) in Artificial Intelligence at Surrey Institute for People-Centred AI and CVSSP, UK. Prior to that, she was a Senior Research Fellow (2020-2022) in Computer Vision and Machine Learning at the Centre for Vision Speech and Signal Processing (CVSSP), in the SketchX group, led by Prof. Yi-Zhe Song. Before joining CVSSP, she was a postdoctoral researcher (2017-2020) at Inria, GraphDeco, under the guidance of Dr. Adrien Bousseau. She had the opportunity to visit MIT and collaborate with Prof. Fredo Durand, MIT, CSAIL, and Prof. Alla Sheffer, UBC, British Columbia. She received her Ph.D. (2012-2016) from MPI Informatik, Germany, advised by Prof. Karol Myszkowski and Prof. Hans-Peter Seidel. While working on her Ph.D. (in 2014), she did a research internship in the Color and HDR group in Technicolor R&D, Rennes, France, under the guidance of Dr. Erik Reinhard. She received a degree (2007-2012) in Applied Mathematics and Computer Science with a specialization in Operation Research and System Analysis from Lomonosov Moscow State University, Russia.  
+					</p>
+					<p>
+						Yulia's research is on how AI can be used to facilitate creative process and help boost human creativity and expressivity in the context of sketching and 3D modeling. 
+					</p>
+				</div>
+				
+				<div class="bio" id="bio_qian">
+					<p> 
+						<a href="https://yuqian1023.github.io//">Dr. Qian Yu</a> is an associate professor at Beihang University. Before joining Beihang, she was a postdoctoral research fellow at UC Berkeley / ICSI, 2018-2019, working with Dr. Stella Yu. She received her Ph.D. degree from the Queen Mary University of London in 2018, advised by Dr. Yi-Zhe Song and Prof. Tao Xiang. Her research is on computer vision and deep learning, focusing on human sketch understanding, including synthesis, recognition, and related applications.
+					</p>
+					
+					<p>
+						Qian has published her work on sketch understanding at top computer vision journals and conferences, such as IJCV, CVPR, ICCV, and ECCV. Her work on sketch recognition, ‘Sketch-a-Net that Beats Humans’, was awarded as the ‘Best Scientific Paper’ at BMVC 2015.
+					</p> 
+				</div>
+				
+				<div class="bio" id="bio_yonggang">
+					<p> 
+						<a href="https://qugank.github.io/">Dr. Yonggang Qi</a> is an assistant professor (lecturer) at Beijing University of Posts and Telecommunications (BUPT), Beijing, China. He received his PhD degree in Signal Processing at BUPT in 2015. From 2019 to 2020, he was a visiting scholar at SketchX Lab at the Centre for Vision Speech and Signal Processing (CVSSP) in University of Surrey. He also worked as a guest PhD at Aalborg University in Denmark in 2013 and a visiting researcher at Sun Yat-sen University in China in 2014. His research interests include perceptual grouping, and sketch-based vision tasks such as sketch-based image retrieval (SBIR), sketch recognition, sketch generation and language-based sketch understanding.
+					</p>
+					<p>
+						His research interests include perceptual grouping and sketchbased vision tasks, and he has published over 10 sketch papers, including at CVPR, ICCV, TIP, TCSVT etc.
+					</p>
+				</div>
+				
+				<div class="bio" id="bio_yu">
+					<p> 
+						<a href="https://www1.icsi.berkeley.edu/~stellayu/">Dr. Stella Yu</a>
+						is the Director of Vision Group at the International Computer Science Institute, a Senior Fellow at the Berkeley Institute for Data Science, and on the faculty of Computer Science, Vision Science, Cognitive and Brain Sciences at UC Berkeley.
+					</p>
+					<p> 
+						Dr. Yu is interested not only in understanding visual perception from multiple perspectives, but also in using computer vision and machine learning to automate and exceed human expertise in practical applications.
+					</p>
+				</div>
+				
+				<div class="bio" id="bio_tolias">
+					<p> 
+						<a href="https://cmp.felk.cvut.cz/~toliageo/">Dr. Giorgos Tolias</a> is an Assistant Professor at CTU in Prague and is leading
+a team within the Visual Recognition Group. Previously, he was a post-doc at Inria, Rennes. His work got the Best Science Paper Award - Honorable Mention at BMVC 2017 and has served as an AC for ECCV 2020. He co-organized workshops on Visual Instance-Level Recognition at prior major computer vision conferences such as CVPR, ECCV, and ICCV.
+					</p>
+					
+					<p> 
+						Giorgos’s research interests include sketch recognition on which he has published at CVPR’17, ECCV’18, and IVC’18.
+					</p>
+				</div>
+				
+				<div class="bio" id="bio_bessmeltsev">
+					<p> 
+						<a href="http://www-labs.iro.umontreal.ca/~bmpix/">Dr. Mikhail Bessmeltsev</a>
+						is an Assistant Professor at Universite de Montreal, Quebec Canada. He did his postdoc at MIT (CSAIL) with Justin Solomon in Cambridge, MA. Before, he completed his Ph.D. in Computer Science at the University of British Columbia (Vancouver, Canada). Before that (2004-2010) he did his Bachelor’s and Master’s at Mechanics & Mathematics Department of Novosibirsk State University (Akademgorodok, Novosibirsk, Russia).
+					</p>
+					<p>
+						Sketching lies at the center of his interests, with a focus on sketch-based modeling and beautification. His work on sketching is regularly published at ACM TOG, CGF, and ICLR.
+					</p>
+				</div>
+				
+				<div class="bio" id="bio_han">
+					<p> 
+						<a href="https://mypage.cuhk.edu.cn/academics/hanxiaoguang/">Dr. Xiaoguang Han</a>
+						is an Assistant Professor, a presidential young fellow at the Chinese University of Hong Kong, Shenzhen, and a research scientist at Shenzhen Institute of Big Data. He obtained a Ph.D. degree in computer science from The University of Hong Kong in 2017. His papers were selected as best paper finalists of CVPR 2019 and paper award nominees of CVPR 2020.
+					</p>
+					<p> 
+						His work on deep sketch-based 3D modeling and sketch-based
+						image synthesis is published at top graphics conference and journals, such as
+						ACM TOG and Pacific Graphics, and top UI conference UIST.
+					</p> 
+				</div>
+				
+					<div class="bio" id="bio_r_zhang">
+					<p> 
+						<a href="http://richzhang.github.io/">Dr. Richard Zhang</a> is a Senior Research Scientist at Adobe Research, with interests in computer vision, deep learning, machine learning, and graphics. He obtained his PhD in EECS, advised by Professor Alexei A. Efros, at UC Berkeley in 2018. He graduated summa cum laude with BS and MEng degrees from Cornell University in ECE. He is a recipient of the 2017 Adobe Research Fellowship.
+					</p>
+					
+				</div>
+
+				
+            </div>
+            
+
+
+
+
+            <br id="Contact" >
+				<div class="w3-border-top  w3-border-grey w3-content w3-center" style="max-width:1080px">
+					*Contact: Please email <font color="blue"> <a href="mailto:qianyu@buaa.edu.cn">Qian Yu<a> </font> if any enquires.
+				</div>
+            <br />
+            <br />
+        </div>
+    </div>
+
+
+
+
+	<script>
+		function showBioSpeaker(val) {	
+			
+			var content = document.getElementById(val);
+			if (content.style.display === "block") {
+				content.style.display = "none";
+			} else {
+				document.getElementById("bio_sezgin").style.display = "none"
+				document.getElementById("bio_bousseau").style.display = "none"
+				document.getElementById("bio_shugrina").style.display = "none"
+				document.getElementById("bio_simo").style.display = "none"
+				document.getElementById("bio_deng").style.display = "none"
+				document.getElementById("bio_song").style.display = "none"
+				
+				content.style.display = "block";				
+			}
+		}
+		
+		
+		function showBioOrganizer(val) {	
+			
+			var content = document.getElementById(val);
+			if (content.style.display === "block") {
+				content.style.display = "none";
+			} else {
+				document.getElementById("bio_yulia").style.display = "none"
+				document.getElementById("bio_qian").style.display = "none"
+				document.getElementById("bio_yonggang").style.display = "none"
+				document.getElementById("bio_yu").style.display = "none"
+				document.getElementById("bio_tolias").style.display = "none"
+				document.getElementById("bio_bessmeltsev").style.display = "none"
+				document.getElementById("bio_han").style.display = "none"
+				
+				content.style.display = "block";				
+			}
+		}
+		
+	</script>
+
+
+</body>
+
+</html>
